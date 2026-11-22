@@ -12,7 +12,7 @@ Added: claim-check 0.1.0 (draft: review open), handover-pack 0.1.0 (draft: revie
 
 ## 2026-11-22
 
-Repository renamed from `skills` to `life-skills`. Old links redirect.
+Repository renamed from `skills` to `life-skills`.
 
 agreement-check, claim-check, handover-pack and name-check: an extra test round and a third review brought every rubric line to 4 or 5; the draft label is removed.
 
