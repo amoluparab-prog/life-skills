@@ -73,3 +73,13 @@ Review 2 confirmed each review 1 fix as done, except opening every source link, 
 - Never run: stays (phase 3), arrival (9), coming home (10), the photo check, a real calendar write, a trip with no flight, a run with the traveller away, a non-citizen resident's re-entry check, and near misses for a migration visa, an expense report, or "what do I wear and pack for the wedding trip".
 - Small edits made after round 3 and after the second review were checked by the author only.
 - Nobody has used it on a real trip yet.
+
+## 23 November 2026: one-message mode (0.1.1)
+
+A comparison run showed a gap. Asked "Seattle to Michigan, four days, leadership event... I can't reply again today, so give me your full answer now", the skill gave preparation and packing, then held back check-in, leaving the house, the airport and the trip home "until the dates are known". On the standard track those phases wait for dates, and someone who cannot reply never sends them. A plain prompt with the same words gave a broader answer.
+
+Change: when the traveller is away or asks for everything in one go, the skill now covers every remaining phase in that reply, using the phase files' rules of thumb (labelled as such) and one worked leave-home example where a time is missing. A trip for an event gets a short block on reaching the event itself, handing event preparation to event-plan when it is installed.
+
+Re-run, same prompt, fresh anonymous session with no memory: pass. It stated its assumptions, covered ID, preparation, packing, check-in, leaving the house (worked example: 8:00 flight, 45-minute drive, leave 4:50, which matches phase 7's sum with a 25-minute cushion), the airport, getting to the event and coming home, in about 750 words plus sources. It looked up and dated the FAA power-bank rule and a past NWS climate summary; three TSA and FAA pages would not open and were marked "not verified". Length ran over the 600-word aim.
+
+Not re-run after this change: the other tracks, the full conversation, near misses.
