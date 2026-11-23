@@ -1,0 +1,23 @@
+{
+  "name": "life-skills",
+  "owner": {
+    "name": "Amol Parab",
+    "url": "https://www.linkedin.com/in/amoluparab"
+  },
+  "metadata": {
+    "description": "Life Skills with AI: everyday skills for travel, work, home, money and celebrations."
+  },
+  "plugins": [
+    {
+      "name": "life-skills",
+      "source": "./",
+      "description": "36 everyday skills for Claude: trips, seats, meetings, job offers, quotes, hosting, gifts and more. Each one tested and independently reviewed.",
+      "version": "0.1.0",
+      "author": { "name": "Amol Parab" },
+      "homepage": "https://amoluparab-prog.github.io/life-skills/",
+      "repository": "https://github.com/amoluparab-prog/life-skills",
+      "license": "MIT",
+      "category": "productivity"
+    }
+  ]
+}
