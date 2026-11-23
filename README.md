@@ -47,24 +47,35 @@ Also by the same author, in its own repository: [bedrock](https://github.com/amo
 
 ## Install
 
-Each skill is one folder under `skills/`.
+**The easy way: the website**
+
+Go to **https://amoluparab-prog.github.io/life-skills/**. Each skill has a "Copy for a chat" button, which puts the whole skill on your clipboard to paste into Claude or another AI chat, and a "Download" button, which gives you a zip that is ready to upload. No GitHub needed.
 
 **Claude (web or desktop app)**
 
-1. Download this repository.
-2. Zip the folder of the skill you want, so the archive contains `<skill-name>/SKILL.md` and not a bare `SKILL.md`. On macOS or Linux, from the `skills` folder: `zip -r seat-picker.zip seat-picker/`
-3. In Claude, go to **Customize > Skills**, add a skill, upload the zip, and turn it on.
+1. Download the skill's zip from the website, or from the [`downloads/`](downloads/) folder here.
+2. In Claude, go to **Customize > Skills**, add a skill, upload the zip, and turn it on.
 
-**Claude Code**
+**Claude Code: all 36 at once, as a plugin**
 
-Copy the skill folder into your personal skills directory, so the file sits at `~/.claude/skills/<skill-name>/SKILL.md`:
+```
+/plugin install life-skills --marketplace amoluparab-prog/life-skills
+```
+
+This needs Claude Code 2.1.275 or later. The marketplace file passed `claude plugin validate`; the install itself has not been tried from a second machine yet.
+
+**Claude Code: one skill by hand**
+
+Each skill is one folder under `skills/`. Copy it into your personal skills directory, so the file sits at `~/.claude/skills/<skill-name>/SKILL.md`:
 
 ```bash
 git clone https://github.com/amoluparab-prog/life-skills.git
 cp -r life-skills/skills/seat-picker ~/.claude/skills/
 ```
 
-Install steps were checked against [Create custom skills](https://claude.com/docs/skills/how-to) on 21 November 2026.
+The copy-into-a-chat route carries the same instructions as the installed skill, but a chat cannot run the helper scripts that seat-picker and room-picker include, so those two work best installed.
+
+Upload steps were checked against [Create custom skills](https://claude.com/docs/skills/how-to) on 21 November 2026.
 
 ## What to expect
 
