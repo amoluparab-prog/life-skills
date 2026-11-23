@@ -1,6 +1,6 @@
 # trip-companion
 
-Status: tested and reviewed (three test rounds, two independent reviews, every rubric line at 4 on the second review). Small edits made after the last test round and after the last review were checked by the author only; see the testing record. Version 0.1.0.
+Status: tested and reviewed (three test rounds, two independent reviews, every rubric line at 4 on the second review). Small edits made after the last test round and after the last review were checked by the author only; see the testing record. Version 0.1.1 (23 November 2026: one-message mode now covers every remaining phase; see the testing record).
 
 ## What it does
 
