@@ -45,6 +45,12 @@ footer{border-top:1px solid var(--line);padding:24px 0 48px;color:var(--muted);f
 .opt:hover{border-color:var(--accent)}
 .quiz .back{background:none;border:none;color:var(--accent);padding:6px 0;margin-top:10px;text-decoration:underline}
 .quiz .card{border:none;padding:0;background:none}
+.why table{width:100%;border-collapse:collapse;font-family:system-ui,sans-serif;font-size:.9rem;margin-top:8px}
+.why th,.why td{text-align:left;vertical-align:top;padding:8px 10px 8px 0;border-top:1px solid var(--line)}
+.why th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.why td:first-child{color:var(--muted);white-space:nowrap}
+.why video{width:100%;max-width:300px;border-radius:12px;border:1px solid var(--line);display:block;margin:14px 0 0}
+.why .fine{font-family:system-ui,sans-serif;font-size:.8rem;color:var(--muted);margin:10px 0 0}
 #empty{display:none;padding:30px 0;color:var(--muted)}
 </style>
 </head>
@@ -64,6 +70,18 @@ footer{border-top:1px solid var(--line);padding:24px 0 48px;color:var(--muted);f
 <details class="how"><summary><b>Using Claude Code?</b> Install all 36 at once</summary>
 <p class="ui" style="font-size:.92rem">Run this inside Claude Code (version 2.1.275 or later):</p>
 <pre style="overflow:auto;font-size:.88rem">/plugin install life-skills --marketplace amoluparab-prog/life-skills</pre></details>
+
+<section class="how why"><h2>Why not just ask Claude?</h2>
+<p class="ui" style="font-size:.95rem;margin:0">You can, and you will get a good answer. A skill is a tested prompt you don't have to write: it knows what to ask, checks before it claims, and gives the same shape of answer every time. We sent one gift request to Claude twice.</p>
+<table><tr><th></th><th>Just asking</th><th>With Gift Pick</th></tr>
+<tr><td>Ideas</td><td>One gift, plus a day out</td><td>Six, cheapest first, each with why it fits</td></tr>
+<tr><td>Price</td><td>A range from memory, and it said so</td><td>A price seen that day at a named shop</td></tr>
+<tr><td>Buying</td><td>Two local shops, “phone first”</td><td>Delivery and returns read from the shop's page</td></tr>
+<tr><td>Extras</td><td>A line for the card</td><td>Safe and bolder pick, what to avoid, a card message, a list to check</td></tr>
+<tr><td>Checking</td><td>2 searches, 0 pages read</td><td>8 searches, 10 pages read</td></tr></table>
+<details><summary class="ui" style="margin-top:12px;cursor:pointer;color:var(--accent)">Watch the 25-second version</summary>
+<video controls preload="none" playsinline src="media/gift-pick-with-vs-without.mp4"></video></details>
+<p class="fine">One run each on 22 November 2026, so this shows the pattern, not a guarantee. The skill's answer was longer and took about three and a half times as long.</p></section>
 
 <section class="quiz" id="quiz" aria-live="polite"></section>
 
