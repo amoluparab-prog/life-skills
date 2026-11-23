@@ -23,3 +23,7 @@ Added 19 skills at 0.1.0: wardrobe-upgrade, host-plan, gift-pick, toast-writer, 
 Examples made more general, a contact line added to the README, and the repository history restarted from this point.
 
 Easier to use: a website (https://amoluparab-prog.github.io/life-skills/) with copy-into-a-chat and download buttons, ready-made zips in `downloads/`, and a plugin marketplace file so Claude Code can install the whole collection in one command. Added `tools/check.py`, run on every change, which checks names, pages and zips and scans for email addresses, secrets and session links.
+
+## 2026-11-23
+
+trip-companion 0.1.1: when the traveller cannot reply, it now covers every remaining phase in one message, with rules of thumb where a time is missing, plus a short block on reaching an event. Re-tested once; see its testing record.
